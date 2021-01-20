@@ -1,5 +1,5 @@
 <#import "template.ftl" as layout>
-<h1>HELLO WORLD!</h1>
+<h1> HELLO WORLD! </h1>
 <@layout.registrationLayout displayInfo=social.displayInfo displayWide=(realm.password && social.providers??); section>
     <#if section = "header">
         ${msg("doLogIn")}
