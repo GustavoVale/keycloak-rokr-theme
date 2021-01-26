@@ -1,0 +1,62 @@
+
+#kc-form{
+    background-color: beige;
+}
+
+
+body.div.external-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    height: -webkit-fill-available;
+    height: stretch;
+    background: brown;
+}
+
+body.content-container {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: scroll;
+    max-width: 1960px;
+    align-self: center;
+    width: 100%;
+    background: brown;
+}
+
+div#content-left-container {
+     min-width: 300px;
+     max-width: 630px;
+     width: 32%;
+     flex-basis: 32%;
+     flex-grow: 1;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-between;
+     margin-right: var(--margin-large);
+    background: brown;
+ }
+
+#vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+#horizontal {
+    display: flex;
+    flex-direction: row;
+}
+
+div#insider-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    width: -webkit-fill-available;
+    width: stretch;
+    background: blue;
+}
