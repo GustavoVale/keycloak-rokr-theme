@@ -1,0 +1,75 @@
+.display-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.display-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.text-large-bold {
+    font-family: 'Merriweather-Bold', 'Merriweather Bold', 'Merriweather', sans-serif;
+    font-size: var(--font-text-size-large);
+    line-height: var(--font-text-size-large);
+}
+
+.text-large {
+    font-family: 'Merriweather-Bold', 'Merriweather Bold', 'Merriweather', sans-serif;
+    font-size: var(--font-text-size-large);
+    line-height: var(--font-text-size-large);
+}
+
+.text-medium {
+    font-family: 'Nirmala UI', sans-serif;
+    font-size: var(--font-text-size-medium);
+    line-height: var(--font-text-size-medium);
+}
+
+.text-medium-bold {
+    font-family: 'Nirmala Bold', sans-serif;
+    font-size: var(--font-text-size-medium);
+    line-height: var(--font-text-size-medium);
+}
+
+.text-small-bold {
+    font-family: 'Nirmala Bold', sans-serif;
+    font-size: var(--font-text-size-small);
+    line-height: var(--font-text-size-small);
+}
+
+.text-small {
+    font-family: 'Nirmala UI', sans-serif;
+    font-size: var(--font-text-size-small);
+    line-height: var(--font-text-size-small);
+}
+
+.text-x-small {
+    font-family: 'Nirmala UI', sans-serif;
+    font-size: var(--font-text-size-x-small);
+    line-height: var(--font-text-size-x-small);
+}
+
+.text-x-small-bold {
+    font-family: 'Nirmala Bold', sans-serif;
+    font-size: var(--font-text-size-x-small);
+    line-height: var(--font-text-size-x-small);
+}
+
+:root {
+
+    /* Colors */
+    --color-white: #FEFEFE;
+    --color-black: #333333;
+    --color-darkgrey: #D2D3D7;
+    --color-lightgrey: #f4f5f7;
+    --color-green: #039664;
+    --color-lightblue: #027DB4;
+    --color-red: #D93019;
+
+    /* text font sizes */
+    --font-text-size-x-small: 13px;
+    --font-text-size-small: 14px;
+    --font-text-size-medium: 20px;
+    --font-text-size-large: 30px;
+}

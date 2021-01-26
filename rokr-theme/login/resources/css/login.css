@@ -1,62 +1,200 @@
-
-#kc-form{
-    background-color: beige;
-}
-
-
-body.div.external-container {
-    display: flex;
-    flex-direction: column;
+.external-container {
     height: 100%;
     height: -webkit-fill-available;
     height: stretch;
-    background: brown;
 }
 
-body.content-container {
-    height: 100%;
-    display: flex;
-    flex-direction: row;
+.content-container {
+    height: 92%;
     align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap;
-    overflow: scroll;
-    max-width: 1960px;
+    max-width: 1860px;
     align-self: center;
     width: 100%;
-    background: brown;
 }
 
-div#content-left-container {
-     min-width: 300px;
-     max-width: 630px;
-     width: 32%;
-     flex-basis: 32%;
-     flex-grow: 1;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: space-between;
-     margin-right: var(--margin-large);
-    background: brown;
- }
+.content-left-container {
+    min-width: 300px;
+    max-width: 630px;
+    width: 100%;
+    height: 100%;
+    flex-basis: 32%;
+    flex-grow: 1;
+    align-items: flex-end;
+    justify-content: space-between;
+    background: var(--color-lightgrey);
+}
 
-#vertical {
-    display: flex;
+.content-right-container {
+    width: 100%;
+    height: 100%;
+    max-width: 1290px;
+    flex-basis: 68%;
+    flex-grow: 3;
     flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: var(--color-white);
 }
 
-#horizontal {
-    display: flex;
-    flex-direction: row;
-}
-
-div#insider-left {
+.logo {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 290px;
+    height: 80px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+#kc-header {
+    display: none;
+}
+
+#kc-locale {
+    z-index: -5;
+    display: none;
+}
+
+div.alert.alert-error {
+    display: none;
+}
+
+.header {
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 80%;
+}
+
+input[type=text], input[type=password] {
+    height: 25px;
     width: 100%;
-    width: -webkit-fill-available;
-    width: stretch;
-    background: blue;
+    border: 1px solid var(--color-darkgrey);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.input-text {
+    margin-left: 10px;
+    margin-bottom: 2px;
+}
+
+.checkbox {
+    margin-bottom: 60px;
+}
+
+#kc-login {
+    height: 45px;
+    width: 200px;
+    background-color: var(--color-green);
+    color: var(--color-white);
+    font-family: 'Nirmala UI', sans-serif;
+    font-size: var(--font-text-size-medium);
+    line-height: var(--font-text-size-medium);
+    border: 1px solid var(--color-black);
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+#kc-form-buttons {
+    align-items: center;
+}
+
+#forgot-password {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.forgot-password-text {
+    color: var(--color-lightblue);
+    text-decoration: none;
+}
+
+.dropbtn {
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    padding: 4px 0px 4px 16px;
+    height: 20px;
+    width: 140px;
+    border: 1px solid var(--color-darkgrey);
+    border-radius: 5px;
+}
+
+.chosen-language {
+    min-width: fit-content;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--color-white);
+    min-width: fit-content;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: var(--color-black);
+    padding: 8px 12px;
+    width: 130px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--color-lightgrey);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: var(--color-lightgrey);
+}
+
+.img-arrow-down {
+    width: 16px;
+    height: 10px;
+    transform: scale(0.7);
+    align-items: center;
+    padding: 6px;
+}
+
+.large-logo-position {
+    margin-top: 200px;
+    justify-items: center;
+    align-items: center;
+}
+
+.rights {
+    align-items: center;
+    padding: 40px 0px 40px 50px;
+}
+
+.rokr-footer {
+    width: 70%;
+    align-items: center;
+}
+
+.footer-padding {
+    padding: 30px 45px;
+}
+
+.error-message {
+    color: var(--color-red);
+    padding: 40px;
+
 }
